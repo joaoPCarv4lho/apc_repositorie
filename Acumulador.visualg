@@ -1,0 +1,35 @@
+algoritmo "Algoritmo de cáculo da média usando acumulador"
+
+var
+  notas: vetor[1..5] de real
+  media_geral, soma: real
+  i, frequencia: inteiro
+
+inicio
+
+  soma <- 0
+
+    escreval("Digite a frequência (%): ")
+    leia(frequencia)
+
+  se (frequencia < 75) entao
+    escreval("Reprovado por frequência!")
+  senao
+    para i de 1 ate 5 faca
+    escreval("Informe a nota ", i, ": ")
+    leia(notas[i])
+    soma <- soma + notas[i]
+  fimpara
+
+  media_geral <- soma/5
+
+    se (media_geral < 7) entao
+      escreval("Reprovado!")
+    senao
+      escreval("Aprovado!")
+    fimse
+  fimse
+
+  escreval("Média geral: ", media_geral:4:2)
+
+fimalgoritmo
