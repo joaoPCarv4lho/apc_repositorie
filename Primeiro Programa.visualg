@@ -1,0 +1,28 @@
+algoritmo "Primeiro Programa"
+
+var
+  nota1, nota2, media: real
+  frequencia: inteiro
+
+inicio
+
+  escreval("Digite a primeira nota: ")
+  leia(nota1)
+  escreval("Digite a segunda nota: ")
+  leia(nota2)
+  escreval("Digite a frequência (%): ")
+  leia(frequencia)
+
+  media <- (nota1 + nota2) / 2
+
+  se (frequencia < 75) entao
+    escreval("Reprovado por frequência!")
+  senao
+    se (media < 7) entao
+      escreval("Reprovado! Média abaixo de 7.")
+    senao
+      escreval("Aprovado!")
+    fimse
+  fimse
+
+fimalgoritmo
