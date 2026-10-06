@@ -1,0 +1,17 @@
+algoritmo "Contagem usando Repita"
+
+var
+  contador, quantidade, numero: inteiro
+
+inicio
+  escreval("Iniciando...")
+  escreval("Informe quantos números quer imprimir na tela: ")
+  leia(quantidade)
+
+  repita 
+    numero <- RandI(11)
+    escreval(numero, ", ")
+    contador <- contador + 1
+  ate (contador = quantidade)
+  escreval("Fim!")
+fimalgoritmo

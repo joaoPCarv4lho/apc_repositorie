@@ -1,0 +1,18 @@
+algoritmo "Contagem usando loop For"
+
+
+
+var
+  contador, quantidade, numero: inteiro
+
+inicio
+  escreval("Iniciando...")
+  escreval("Informe quantos números quer imprimir na tela: ")
+  leia(quantidade)
+
+  para contador de 1 ate quantidade faca
+    numero <- RandI(11)
+    escreval(numero, ", ")
+    contador <- contador + 1
+  fimpara
+fimalgoritmo
